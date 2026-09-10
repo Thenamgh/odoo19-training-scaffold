@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="1">
+        <record id="category_sc" model="training.category">
+            <field name="name">Short Course</field>
+        </record>
+        <record id="category_mis" model="training.category">
+            <field name="name">Học phần HTTTQL</field>
+        </record>
+        <record id="item_sc" model="training.item">
+            <field name="name">Hồ sơ mẫu Short Course</field>
+            <field name="category_id" ref="category_sc"/>
+            <field name="description">Dữ liệu minh họa, không phải tiến độ thực tế.</field>
+        </record>
+        <record id="item_mis" model="training.item">
+            <field name="name">Hồ sơ mẫu HTTTQL</field>
+            <field name="category_id" ref="category_mis"/>
+            <field name="description">Dữ liệu minh họa cho quan hệ và thao tác ORM.</field>
+        </record>
+    </data>
+</odoo>

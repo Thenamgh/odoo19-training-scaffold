@@ -1,0 +1,18 @@
+# Local development only. Copy to config/odoo.conf and adjust paths/credentials.
+# Port 5433 is an example matching the earlier workspace, not auto-detected.
+[options]
+admin_passwd = CHANGE_ME_MASTER_PASSWORD
+db_host = 127.0.0.1
+db_port = 5433
+db_user = odoo19
+db_password = CHANGE_ME_DATABASE_PASSWORD
+addons_path = D:/EIT_Odoo19Workspace/odoo/odoo/addons,D:/EIT_Odoo19Workspace/odoo/addons,D:/EIT_Odoo19Workspace/custom_addons
+data_dir = D:/EIT_Odoo19Workspace/.odoo_data
+http_interface = 127.0.0.1
+http_port = 8069
+dbfilter = ^odoo19_training$
+list_db = True
+logfile = D:/EIT_Odoo19Workspace/logs/odoo19.log
+log_level = info
+workers = 0
+proxy_mode = False

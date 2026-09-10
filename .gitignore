@@ -1,0 +1,14 @@
+# Source Odoo upstream is cloned separately, not committed into this repository.
+/odoo/
+/.venv/
+/.odoo_data/
+/logs/
+/config/*.conf
+!/config/odoo.conf.example
+.env
+.env.*
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.idea/
+.DS_Store

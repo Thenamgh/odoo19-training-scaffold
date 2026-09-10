@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <menuitem id="menu_training_root" name="Odoo Training" sequence="50"
+              groups="odoo_training.group_training_user"/>
+    <menuitem id="menu_training_item" name="Hồ sơ thực hành"
+              parent="menu_training_root" action="action_training_item" sequence="10"/>
+    <menuitem id="menu_training_category" name="Danh mục"
+              parent="menu_training_root" action="action_training_category" sequence="20"/>
+</odoo>

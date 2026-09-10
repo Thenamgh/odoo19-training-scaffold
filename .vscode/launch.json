@@ -1,0 +1,21 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Odoo 19 - Run (không nâng cấp module)",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "${workspaceFolder}/odoo/odoo-bin",
+      "python": "${workspaceFolder}/.venv/Scripts/python.exe",
+      "cwd": "${workspaceFolder}",
+      "args": [
+        "-c",
+        "${workspaceFolder}/config/odoo.conf",
+        "-d",
+        "odoo19_training"
+      ],
+      "console": "integratedTerminal",
+      "justMyCode": false
+    }
+  ]
+}

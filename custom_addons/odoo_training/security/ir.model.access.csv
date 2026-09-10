@@ -1,0 +1,3 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_training_category_user,training.category user,model_training_category,odoo_training.group_training_user,1,1,1,1
+access_training_item_user,training.item user,model_training_item,odoo_training.group_training_user,1,1,1,1

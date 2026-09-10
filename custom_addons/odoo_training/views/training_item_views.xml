@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_training_item_list" model="ir.ui.view">
+        <field name="name">training.item.list</field>
+        <field name="model">training.item</field>
+        <field name="arch" type="xml">
+            <list string="Hồ sơ thực hành">
+                <field name="name"/>
+                <field name="category_id"/>
+                <field name="active" optional="hide"/>
+            </list>
+        </field>
+    </record>
+    <record id="view_training_item_form" model="ir.ui.view">
+        <field name="name">training.item.form</field>
+        <field name="model">training.item</field>
+        <field name="arch" type="xml">
+            <form string="Hồ sơ thực hành">
+                <sheet>
+                    <group>
+                        <field name="name"/>
+                        <field name="category_id"/>
+                        <field name="active"/>
+                    </group>
+                    <notebook>
+                        <page string="Mô tả" name="description">
+                            <field name="description" placeholder="Mô tả bài toán hoặc nội dung thực hành..."/>
+                        </page>
+                    </notebook>
+                </sheet>
+            </form>
+        </field>
+    </record>
+    <record id="view_training_item_search" model="ir.ui.view">
+        <field name="name">training.item.search</field>
+        <field name="model">training.item</field>
+        <field name="arch" type="xml">
+            <search string="Tìm hồ sơ">
+                <field name="name"/>
+                <field name="category_id"/>
+                <filter name="archived" string="Đã lưu trữ"
+                        domain="[('active', '=', False)]"/>
+                <separator/>
+                <filter name="group_category" string="Theo danh mục"
+                        context="{'group_by': 'category_id'}"/>
+            </search>
+        </field>
+    </record>
+    <record id="action_training_item" model="ir.actions.act_window">
+        <field name="name">Hồ sơ thực hành</field>
+        <field name="res_model">training.item</field>
+        <field name="view_mode">list,form</field>
+        <field name="search_view_id" ref="view_training_item_search"/>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">Tạo hồ sơ thực hành đầu tiên</p>
+            <p>Tạo danh mục trước, sau đó chọn danh mục cho hồ sơ.</p>
+        </field>
+    </record>
+</odoo>
