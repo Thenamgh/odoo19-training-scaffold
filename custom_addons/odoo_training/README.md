@@ -16,4 +16,4 @@ Dùng chung cho COM-04, Short Course và học phần HTTTQL.
 Đây là điểm khởi đầu, chưa phải bài cuối khóa đầy đủ. Chưa thêm workflow,
 sequence, decorator, chatter hay inheritance; phát triển theo từng bài.
 Hướng dẫn cài, chạy và test nằm trong README.md ở gốc workspace.
-Không sao chép hoặc thay thế module delivery_management đang có.
+Không sao chép hoặc thay thế module đang có.
