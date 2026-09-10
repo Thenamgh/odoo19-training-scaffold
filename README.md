@@ -5,7 +5,7 @@ Bộ bàn giao mới, không phải bản sao repository Research_Odoo19 và kh�
 delivery_management. Đã đọc manifest và __init__.py của module hiện có để tránh
 trùng tên và tránh mang theo các phụ thuộc stock/sale/mail không cần cho bộ khung.
 
-## 1. Cấu trúc theo workspace đã chốt
+## 1. Cấu trúc theo workspace
 
 Giải nén để có đúng D:\EIT_Odoo19Workspace, không tạo thêm một lớp
 EIT_Odoo19Workspace bên trong thư mục cùng tên.
